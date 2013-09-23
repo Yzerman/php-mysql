@@ -29,7 +29,7 @@
 
     <article>
 
-    <p><?php include 'php/foreach.php';?>
+    <p><?php include 'php/mailform.php';?>
     </article>
 
    </div>

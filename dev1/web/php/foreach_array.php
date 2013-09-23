@@ -13,5 +13,4 @@
     }
     echo "</table>"
 
-break()
 ?>

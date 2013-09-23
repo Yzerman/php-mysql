@@ -22,6 +22,53 @@ p, blockquote, footer {
   line-height: 1.5;
 }
 
+/* FORM
+--------------------------------------------------------- */
+/* Centre the form within the page */
+
+label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:2px;
+}
+form {
+    margin:0 auto;
+    width:459px;
+}
+
+/* Style the text boxes */
+input, textarea {
+    width:439px;
+    height:27px;
+    background:#efefef;
+    border:1px solid #dedede;
+    padding:10px;
+    margin-top:3px;
+    font-size:0.9em;
+    color:#3a3a3a;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+}
+input:focus, textarea:focus {
+    border:1px solid #97d6eb;
+}
+#submit {
+    width:127px;
+    height:38px;
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+}
+
+	#submit:hover {
+	    opacity:0.9;
+	}
+textarea {
+	height:213px;
+	background:right no-repeat #efefef;
+}
+
 /* HEADINGS
 --------------------------------------------------------- */
 h1, h2, h3 {
