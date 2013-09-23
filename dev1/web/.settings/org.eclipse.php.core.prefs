@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 eclipse.preferences.version=1
 include_path=0;/dev1
 use_asp_tags_as_php=false
+=======
+eclipse.preferences.version=1
+include_path=0;/dev1
+use_asp_tags_as_php=false
+>>>>>>> 74ba8cdb0ae82bd05e9c970edde3b2661e73b302

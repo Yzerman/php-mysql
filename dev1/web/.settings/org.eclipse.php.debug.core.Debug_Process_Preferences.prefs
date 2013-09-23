@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 eclipse.preferences.version=1
 org.eclipse.php.debug.core.use-project-settings=true
+=======
+eclipse.preferences.version=1
+org.eclipse.php.debug.core.use-project-settings=true
+>>>>>>> 74ba8cdb0ae82bd05e9c970edde3b2661e73b302
