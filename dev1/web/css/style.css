@@ -1,0 +1,110 @@
+
+
+html { 
+  height: 100%;
+}
+
+/* tell the browser to render HTML 5 elements as block */
+article, aside, figure, footer, header, hgroup, nav, section { 
+  display:block;
+}
+
+body { 
+  font: normal .80em arial, sans-serif;
+  background: #1D1D1D;
+  color: #FFF;
+}
+
+header { 
+  background: transparent;
+  height: 130px;
+}
+
+nav {
+  position: absolute;
+  margin-top: 5px;
+  top: 0;
+  right: 0;
+}
+
+nav li {
+  float: left;
+  margin: 5px;
+}
+
+footer { 
+  width: 950px;
+  font: 170% 'Yanone Kaffeesatz', arial, sans-serif;
+  height: 30px;
+  padding: 5px 0 20px 0;
+  text-align: center;
+  border-bottom: 1px solid #FFF;
+}
+
+article {
+  overflow: hidden;
+  width: 74%;
+  float: left;
+  margin-right: 5px;
+  padding-bottom: 5px;
+}
+
+aside {
+  width: 24%;
+  float: right;
+}
+
+address{
+  color: #FAA;
+  height: 20px;
+  width: 950px;
+}
+
+table { 
+  margin: 10px 0 30px 0;
+}
+
+.redbutton {
+  -moz-box-shadow:inset 24px 1px 18px 5px #f29c93;
+  -webkit-box-shadow:inset 24px 1px 18px 5px #f29c93;
+  box-shadow:inset 24px 1px 18px 5px #f29c93;
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fe1a00), color-stop(1, #ce0100) );
+  background:-moz-linear-gradient( center top, #fe1a00 5%, #ce0100 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100');
+  background-color:#fe1a00;
+  -webkit-border-top-left-radius:20px;
+  -moz-border-radius-topleft:20px;
+  border-top-left-radius:20px;
+  -webkit-border-top-right-radius:20px;
+  -moz-border-radius-topright:20px;
+  border-top-right-radius:20px;
+  -webkit-border-bottom-right-radius:20px;
+  -moz-border-radius-bottomright:20px;
+  border-bottom-right-radius:20px;
+  -webkit-border-bottom-left-radius:20px;
+  -moz-border-radius-bottomleft:20px;
+  border-bottom-left-radius:20px;
+  text-indent:0;
+  border:1px solid #d83526;
+  display:inline-block;
+  color:#ffffff;
+  font-family:Comic Sans MS;
+  font-size:15px;
+  font-weight:bold;
+  font-style:normal;
+  height:50px;
+  line-height:50px;
+  width:100px;
+  text-decoration:none;
+  text-align:center;
+  text-shadow:1px 1px 0px #b23e35;
+}
+.redbutton:hover {
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ce0100), color-stop(1, #fe1a00) );
+  background:-moz-linear-gradient( center top, #ce0100 5%, #fe1a00 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce0100', endColorstr='#fe1a00');
+  background-color:#ce0100;
+}.redbutton:active {
+  position:relative;
+  top:1px;
+}
