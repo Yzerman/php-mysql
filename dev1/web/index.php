@@ -29,7 +29,7 @@
 
     <article>
 
-    <p><?php include 'php/mailform.php';?>
+    <p><?php include 'php/form_GET.php';?>
     </article>
 
    </div>
