@@ -1,0 +1,503 @@
+2013/11/22 12:09:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.".' in /vagrant/dev1/yii/framework/web/CController.php:484
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CController.php(271): CController->missingAction('index.')
+#1 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('index.')
+#2 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('site/index.')
+#3 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /vagrant/dev1/yii/trackstar/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trackstar/index.php?r=site/index.
+---
+2013/11/24 12:45:54 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'trackstar.tbl_migration' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `tbl_migration`.
+2013/11/24 12:56:13 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'trackstar.project' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `project`.
+in /vagrant/dev1/yii/trackstar/index.php (13)
+2013/11/24 12:57:25 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'trackstar.project' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `project`.
+in /vagrant/dev1/yii/trackstar/index.php (13)
+2013/11/24 13:05:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /vagrant/dev1/yii/trackstar/protected/controllers/ProjectController.php:155
+Stack trace:
+#0 /vagrant/dev1/yii/trackstar/protected/controllers/ProjectController.php(55): ProjectController->loadModel('2')
+#1 [internal function]: ProjectController->actionView('2')
+#2 /vagrant/dev1/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#3 /vagrant/dev1/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#4 /vagrant/dev1/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /vagrant/dev1/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /vagrant/dev1/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /vagrant/dev1/yii/framework/web/CController.php(292): CFilterChain->run()
+#11 /vagrant/dev1/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#13 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('project/view')
+#14 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /vagrant/dev1/yii/trackstar/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/trackstar/index.php?r=project/view&id=2
+---
+2013/11/24 13:13:41 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /vagrant/dev1/yii/framework/web/auth/CAccessControlFilter.php:170
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/auth/CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /vagrant/dev1/yii/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /vagrant/dev1/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /vagrant/dev1/yii/framework/web/CController.php(292): CFilterChain->run()
+#6 /vagrant/dev1/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('admin')
+#8 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('project/admin')
+#9 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /vagrant/dev1/yii/trackstar/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/trackstar/index.php?r=project/admin
+HTTP_REFERER=http://localhost:8088/trackstar/index.php?r=project/view&id=1
+---
+2013/11/24 13:36:43 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1072 Key column 'project_
+id' doesn't exist in table. The SQL statement executed was: ALTER TABLE `tbl_issue` ADD CONSTRAINT `fk_issue_project` FOREIGN KEY (`project_
+id`) REFERENCES `tbl_project` (`id`) ON DELETE CASCADE ON UPDATE RESTRICT.
+2013/11/24 13:36:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1072 Key column 'project_
+id' doesn't exist in table. The SQL statement executed was: ALTER TABLE `tbl_issue` ADD CONSTRAINT `fk_issue_project` FOREIGN KEY (`project_
+id`) REFERENCES `tbl_project` (`id`) ON DELETE CASCADE ON UPDATE RESTRICT' in /vagrant/dev1/yii/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /vagrant/dev1/yii/framework/db/CDbCommand.php(1362): CDbCommand->execute()
+#1 /vagrant/dev1/yii/framework/db/CDbMigration.php(344): CDbCommand->addForeignKey('fk_issue_projec...', 'tbl_issue', 'project_?id', 'tbl_project', 'id', 'CASCADE', 'RESTRICT')
+#2 /vagrant/dev1/yii/trackstar/protected/migrations/m131124_133314_create_issue_user_and_assignment_table.php(47): CDbMigration->addForeignKey('fk_issue_projec...', 'tbl_issue', 'project_?id', 'tbl_project', 'id', 'CASCADE', 'RESTRICT')
+#3 /vagrant/dev1/yii/framework/cli/commands/MigrateCommand.php(386): m131124_133314_create_issue_user_and_assignment_table->up()
+#4 /vagrant/dev1/yii/framework/cli/commands/MigrateCommand.php(110): MigrateCommand->migrateUp('m131124_133314_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 /vagrant/dev1/yii/framework/console/CConsoleCommand.php(173): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 /vagrant/dev1/yii/framework/console/CConsoleCommandRunner.php(68): CConsoleCommand->run(Array)
+#8 /vagrant/dev1/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 /vagrant/dev1/yii/framework/base/CApplication.php(162): CConsoleApplication->processRequest()
+#10 /vagrant/dev1/yii/framework/yiic.php(34): CApplication->run()
+#11 /vagrant/dev1/yii/trackstar/protected/yiic.php(7): require_once('/vagrant/dev1/y...')
+#12 /vagrant/dev1/yii/trackstar/protected/yiic(4): require_once('/vagrant/dev1/y...')
+#13 {main}
+---
+2013/11/24 13:38:14 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'tbl_issue' already exists. The SQL statement executed was: CREATE TABLE `tbl_issue` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`name` varchar(255) NOT NULL,
+	`description` text,
+	`project_id` int(11) DEFAULT NULL,
+	`type_id` int(11) DEFAULT NULL,
+	`status_id` int(11) DEFAULT NULL,
+	`owner_id` int(11) DEFAULT NULL,
+	`requester_id` int(11) DEFAULT NULL,
+	`create_time` datetime DEFAULT NULL,
+	`create_user_id` int(11) DEFAULT NULL,
+	`update_time` datetime DEFAULT NULL,
+	`update_user_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB.
+2013/11/24 13:38:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'tbl_issue' already exists. The SQL statement executed was: CREATE TABLE `tbl_issue` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`name` varchar(255) NOT NULL,
+	`description` text,
+	`project_id` int(11) DEFAULT NULL,
+	`type_id` int(11) DEFAULT NULL,
+	`status_id` int(11) DEFAULT NULL,
+	`owner_id` int(11) DEFAULT NULL,
+	`requester_id` int(11) DEFAULT NULL,
+	`create_time` datetime DEFAULT NULL,
+	`create_user_id` int(11) DEFAULT NULL,
+	`update_time` datetime DEFAULT NULL,
+	`update_user_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB' in /vagrant/dev1/yii/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /vagrant/dev1/yii/framework/db/CDbCommand.php(1251): CDbCommand->execute()
+#1 /vagrant/dev1/yii/framework/db/CDbMigration.php(229): CDbCommand->createTable('tbl_issue', Array, 'ENGINE=InnoDB')
+#2 /vagrant/dev1/yii/trackstar/protected/migrations/m131124_133314_create_issue_user_and_assignment_table.php(21): CDbMigration->createTable('tbl_issue', Array, 'ENGINE=InnoDB')
+#3 /vagrant/dev1/yii/framework/cli/commands/MigrateCommand.php(386): m131124_133314_create_issue_user_and_assignment_table->up()
+#4 /vagrant/dev1/yii/framework/cli/commands/MigrateCommand.php(110): MigrateCommand->migrateUp('m131124_133314_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 /vagrant/dev1/yii/framework/console/CConsoleCommand.php(173): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 /vagrant/dev1/yii/framework/console/CConsoleCommandRunner.php(68): CConsoleCommand->run(Array)
+#8 /vagrant/dev1/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 /vagrant/dev1/yii/framework/base/CApplication.php(162): CConsoleApplication->processRequest()
+#10 /vagrant/dev1/yii/framework/yiic.php(34): CApplication->run()
+#11 /vagrant/dev1/yii/trackstar/protected/yiic.php(7): require_once('/vagrant/dev1/y...')
+#12 /vagrant/dev1/yii/trackstar/protected/yiic(4): require_once('/vagrant/dev1/y...')
+#13 {main}
+---
+2013/11/24 13:39:07 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'tbl_issue' already exists. The SQL statement executed was: CREATE TABLE `tbl_issue` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`name` varchar(255) NOT NULL,
+	`description` text,
+	`project_id` int(11) DEFAULT NULL,
+	`type_id` int(11) DEFAULT NULL,
+	`status_id` int(11) DEFAULT NULL,
+	`owner_id` int(11) DEFAULT NULL,
+	`requester_id` int(11) DEFAULT NULL,
+	`create_time` datetime DEFAULT NULL,
+	`create_user_id` int(11) DEFAULT NULL,
+	`update_time` datetime DEFAULT NULL,
+	`update_user_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB.
+2013/11/24 13:39:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'tbl_issue' already exists. The SQL statement executed was: CREATE TABLE `tbl_issue` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`name` varchar(255) NOT NULL,
+	`description` text,
+	`project_id` int(11) DEFAULT NULL,
+	`type_id` int(11) DEFAULT NULL,
+	`status_id` int(11) DEFAULT NULL,
+	`owner_id` int(11) DEFAULT NULL,
+	`requester_id` int(11) DEFAULT NULL,
+	`create_time` datetime DEFAULT NULL,
+	`create_user_id` int(11) DEFAULT NULL,
+	`update_time` datetime DEFAULT NULL,
+	`update_user_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB' in /vagrant/dev1/yii/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /vagrant/dev1/yii/framework/db/CDbCommand.php(1251): CDbCommand->execute()
+#1 /vagrant/dev1/yii/framework/db/CDbMigration.php(229): CDbCommand->createTable('tbl_issue', Array, 'ENGINE=InnoDB')
+#2 /vagrant/dev1/yii/trackstar/protected/migrations/m131124_133314_create_issue_user_and_assignment_table.php(21): CDbMigration->createTable('tbl_issue', Array, 'ENGINE=InnoDB')
+#3 /vagrant/dev1/yii/framework/cli/commands/MigrateCommand.php(386): m131124_133314_create_issue_user_and_assignment_table->up()
+#4 /vagrant/dev1/yii/framework/cli/commands/MigrateCommand.php(110): MigrateCommand->migrateUp('m131124_133314_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 /vagrant/dev1/yii/framework/console/CConsoleCommand.php(173): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 /vagrant/dev1/yii/framework/console/CConsoleCommandRunner.php(68): CConsoleCommand->run(Array)
+#8 /vagrant/dev1/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 /vagrant/dev1/yii/framework/base/CApplication.php(162): CConsoleApplication->processRequest()
+#10 /vagrant/dev1/yii/framework/yiic.php(34): CApplication->run()
+#11 /vagrant/dev1/yii/trackstar/protected/yiic.php(7): require_once('/vagrant/dev1/y...')
+#12 /vagrant/dev1/yii/trackstar/protected/yiic(4): require_once('/vagrant/dev1/y...')
+#13 {main}
+---
+2013/11/24 13:40:47 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'tbl_project_user_assignment' already exists. The SQL statement executed was: CREATE TABLE `tbl_project_user_assignment` (
+	`project_id` int(11) NOT NULL,
+	`user_id` int(11) NOT NULL,
+	PRIMARY KEY (`project_id`,`user_id`)
+) ENGINE=InnoDB.
+2013/11/24 13:40:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'tbl_project_user_assignment' already exists. The SQL statement executed was: CREATE TABLE `tbl_project_user_assignment` (
+	`project_id` int(11) NOT NULL,
+	`user_id` int(11) NOT NULL,
+	PRIMARY KEY (`project_id`,`user_id`)
+) ENGINE=InnoDB' in /vagrant/dev1/yii/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /vagrant/dev1/yii/framework/db/CDbCommand.php(1251): CDbCommand->execute()
+#1 /vagrant/dev1/yii/framework/db/CDbMigration.php(229): CDbCommand->createTable('tbl_project_use...', Array, 'ENGINE=InnoDB')
+#2 /vagrant/dev1/yii/trackstar/protected/migrations/m131124_133314_create_issue_user_and_assignment_table.php(42): CDbMigration->createTable('tbl_project_use...', Array, 'ENGINE=InnoDB')
+#3 /vagrant/dev1/yii/framework/cli/commands/MigrateCommand.php(386): m131124_133314_create_issue_user_and_assignment_table->up()
+#4 /vagrant/dev1/yii/framework/cli/commands/MigrateCommand.php(110): MigrateCommand->migrateUp('m131124_133314_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 /vagrant/dev1/yii/framework/console/CConsoleCommand.php(173): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 /vagrant/dev1/yii/framework/console/CConsoleCommandRunner.php(68): CConsoleCommand->run(Array)
+#8 /vagrant/dev1/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 /vagrant/dev1/yii/framework/base/CApplication.php(162): CConsoleApplication->processRequest()
+#10 /vagrant/dev1/yii/framework/yiic.php(34): CApplication->run()
+#11 /vagrant/dev1/yii/trackstar/protected/yiic.php(7): require_once('/vagrant/dev1/y...')
+#12 /vagrant/dev1/yii/trackstar/protected/yiic(4): require_once('/vagrant/dev1/y...')
+#13 {main}
+---
+2013/11/24 13:41:16 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'tbl_issue' already exists. The SQL statement executed was: CREATE TABLE `tbl_issue` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`name` varchar(255) NOT NULL,
+	`description` text,
+	`project_id` int(11) DEFAULT NULL,
+	`type_id` int(11) DEFAULT NULL,
+	`status_id` int(11) DEFAULT NULL,
+	`owner_id` int(11) DEFAULT NULL,
+	`requester_id` int(11) DEFAULT NULL,
+	`create_time` datetime DEFAULT NULL,
+	`create_user_id` int(11) DEFAULT NULL,
+	`update_time` datetime DEFAULT NULL,
+	`update_user_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB.
+2013/11/24 13:41:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'tbl_issue' already exists. The SQL statement executed was: CREATE TABLE `tbl_issue` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`name` varchar(255) NOT NULL,
+	`description` text,
+	`project_id` int(11) DEFAULT NULL,
+	`type_id` int(11) DEFAULT NULL,
+	`status_id` int(11) DEFAULT NULL,
+	`owner_id` int(11) DEFAULT NULL,
+	`requester_id` int(11) DEFAULT NULL,
+	`create_time` datetime DEFAULT NULL,
+	`create_user_id` int(11) DEFAULT NULL,
+	`update_time` datetime DEFAULT NULL,
+	`update_user_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB' in /vagrant/dev1/yii/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /vagrant/dev1/yii/framework/db/CDbCommand.php(1251): CDbCommand->execute()
+#1 /vagrant/dev1/yii/framework/db/CDbMigration.php(229): CDbCommand->createTable('tbl_issue', Array, 'ENGINE=InnoDB')
+#2 /vagrant/dev1/yii/trackstar/protected/migrations/m131124_133314_create_issue_user_and_assignment_table.php(21): CDbMigration->createTable('tbl_issue', Array, 'ENGINE=InnoDB')
+#3 /vagrant/dev1/yii/framework/cli/commands/MigrateCommand.php(386): m131124_133314_create_issue_user_and_assignment_table->up()
+#4 /vagrant/dev1/yii/framework/cli/commands/MigrateCommand.php(110): MigrateCommand->migrateUp('m131124_133314_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 /vagrant/dev1/yii/framework/console/CConsoleCommand.php(173): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 /vagrant/dev1/yii/framework/console/CConsoleCommandRunner.php(68): CConsoleCommand->run(Array)
+#8 /vagrant/dev1/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 /vagrant/dev1/yii/framework/base/CApplication.php(162): CConsoleApplication->processRequest()
+#10 /vagrant/dev1/yii/framework/yiic.php(34): CApplication->run()
+#11 /vagrant/dev1/yii/trackstar/protected/yiic.php(7): require_once('/vagrant/dev1/y...')
+#12 /vagrant/dev1/yii/trackstar/protected/yiic(4): require_once('/vagrant/dev1/y...')
+#13 {main}
+---
+2013/11/24 13:41:53 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1072 Key column 'project_
+	id' doesn't exist in table. The SQL statement executed was: ALTER TABLE `tbl_issue` ADD CONSTRAINT `fk_issue_project` FOREIGN KEY (`project_
+	id`) REFERENCES `tbl_project` (`id`) ON DELETE CASCADE ON UPDATE RESTRICT.
+2013/11/24 13:41:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1072 Key column 'project_
+	id' doesn't exist in table. The SQL statement executed was: ALTER TABLE `tbl_issue` ADD CONSTRAINT `fk_issue_project` FOREIGN KEY (`project_
+	id`) REFERENCES `tbl_project` (`id`) ON DELETE CASCADE ON UPDATE RESTRICT' in /vagrant/dev1/yii/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /vagrant/dev1/yii/framework/db/CDbCommand.php(1362): CDbCommand->execute()
+#1 /vagrant/dev1/yii/framework/db/CDbMigration.php(344): CDbCommand->addForeignKey('fk_issue_projec...', 'tbl_issue', 'project_??id', 'tbl_project', 'id', 'CASCADE', 'RESTRICT')
+#2 /vagrant/dev1/yii/trackstar/protected/migrations/m131124_133314_create_issue_user_and_assignment_table.php(47): CDbMigration->addForeignKey('fk_issue_projec...', 'tbl_issue', 'project_??id', 'tbl_project', 'id', 'CASCADE', 'RESTRICT')
+#3 /vagrant/dev1/yii/framework/cli/commands/MigrateCommand.php(386): m131124_133314_create_issue_user_and_assignment_table->up()
+#4 /vagrant/dev1/yii/framework/cli/commands/MigrateCommand.php(110): MigrateCommand->migrateUp('m131124_133314_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 /vagrant/dev1/yii/framework/console/CConsoleCommand.php(173): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 /vagrant/dev1/yii/framework/console/CConsoleCommandRunner.php(68): CConsoleCommand->run(Array)
+#8 /vagrant/dev1/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 /vagrant/dev1/yii/framework/base/CApplication.php(162): CConsoleApplication->processRequest()
+#10 /vagrant/dev1/yii/framework/yiic.php(34): CApplication->run()
+#11 /vagrant/dev1/yii/trackstar/protected/yiic.php(7): require_once('/vagrant/dev1/y...')
+#12 /vagrant/dev1/yii/trackstar/protected/yiic(4): require_once('/vagrant/dev1/y...')
+#13 {main}
+---
+2013/11/24 15:06:09 [error] [php] Invalid argument supplied for foreach() (/vagrant/dev1/yii/framework/web/helpers/CHtml.php:1960)
+Stack trace:
+#0 /vagrant/dev1/yii/trackstar/protected/views/issue/_form.php(38): CActiveForm->dropDownList()
+#1 /vagrant/dev1/yii/framework/web/CBaseController.php(127): require()
+#2 /vagrant/dev1/yii/framework/web/CBaseController.php(96): IssueController->renderInternal()
+#3 /vagrant/dev1/yii/framework/web/CController.php(870): IssueController->renderFile()
+#4 /vagrant/dev1/yii/trackstar/protected/views/issue/create.php(18): IssueController->renderPartial()
+#5 /vagrant/dev1/yii/framework/web/CBaseController.php(127): require()
+#6 /vagrant/dev1/yii/framework/web/CBaseController.php(96): IssueController->renderInternal()
+#7 /vagrant/dev1/yii/framework/web/CController.php(870): IssueController->renderFile()
+#8 /vagrant/dev1/yii/framework/web/CController.php(783): IssueController->renderPartial()
+#9 /vagrant/dev1/yii/trackstar/protected/controllers/IssueController.php(79): IssueController->render()
+#10 /vagrant/dev1/yii/framework/web/actions/CInlineAction.php(50): IssueController->actionCreate()
+#11 /vagrant/dev1/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#12 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(134): IssueController->runAction()
+#13 /vagrant/dev1/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#14 /vagrant/dev1/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#15 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): IssueController->filterAccessControl()
+#16 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#17 /vagrant/dev1/yii/framework/web/CController.php(292): CFilterChain->run()
+#18 /vagrant/dev1/yii/framework/web/CController.php(266): IssueController->runActionWithFilters()
+#19 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): IssueController->run()
+#20 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#21 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#22 /vagrant/dev1/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php?r=issue/create
+in /vagrant/dev1/yii/trackstar/protected/views/issue/_form.php (38)
+in /vagrant/dev1/yii/trackstar/protected/views/issue/create.php (18)
+in /vagrant/dev1/yii/trackstar/protected/controllers/IssueController.php (79)
+2013/11/24 15:07:41 [error] [php] Invalid argument supplied for foreach() (/vagrant/dev1/yii/framework/web/helpers/CHtml.php:1960)
+Stack trace:
+#0 /vagrant/dev1/yii/trackstar/protected/views/issue/_form.php(38): CActiveForm->dropDownList()
+#1 /vagrant/dev1/yii/framework/web/CBaseController.php(127): require()
+#2 /vagrant/dev1/yii/framework/web/CBaseController.php(96): IssueController->renderInternal()
+#3 /vagrant/dev1/yii/framework/web/CController.php(870): IssueController->renderFile()
+#4 /vagrant/dev1/yii/trackstar/protected/views/issue/create.php(18): IssueController->renderPartial()
+#5 /vagrant/dev1/yii/framework/web/CBaseController.php(127): require()
+#6 /vagrant/dev1/yii/framework/web/CBaseController.php(96): IssueController->renderInternal()
+#7 /vagrant/dev1/yii/framework/web/CController.php(870): IssueController->renderFile()
+#8 /vagrant/dev1/yii/framework/web/CController.php(783): IssueController->renderPartial()
+#9 /vagrant/dev1/yii/trackstar/protected/controllers/IssueController.php(79): IssueController->render()
+#10 /vagrant/dev1/yii/framework/web/actions/CInlineAction.php(50): IssueController->actionCreate()
+#11 /vagrant/dev1/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#12 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(134): IssueController->runAction()
+#13 /vagrant/dev1/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#14 /vagrant/dev1/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#15 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): IssueController->filterAccessControl()
+#16 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#17 /vagrant/dev1/yii/framework/web/CController.php(292): CFilterChain->run()
+#18 /vagrant/dev1/yii/framework/web/CController.php(266): IssueController->runActionWithFilters()
+#19 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): IssueController->run()
+#20 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#21 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#22 /vagrant/dev1/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php?r=issue/create
+in /vagrant/dev1/yii/trackstar/protected/views/issue/_form.php (38)
+in /vagrant/dev1/yii/trackstar/protected/views/issue/create.php (18)
+in /vagrant/dev1/yii/trackstar/protected/controllers/IssueController.php (79)
+2013/11/24 15:19:30 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /vagrant/dev1/yii/framework/web/auth/CAccessControlFilter.php:170
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/auth/CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /vagrant/dev1/yii/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /vagrant/dev1/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /vagrant/dev1/yii/framework/web/CController.php(292): CFilterChain->run()
+#6 /vagrant/dev1/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('admin')
+#8 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/admin')
+#9 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /vagrant/dev1/yii/trackstar/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/admin
+HTTP_REFERER=http://localhost:8088/trackstar/index.php?r=issue/index
+---
+2013/11/24 15:49:40 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in /vagrant/dev1/yii/trackstar/protected/controllers/IssueController.php:212
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#1 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 /vagrant/dev1/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /vagrant/dev1/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /vagrant/dev1/yii/framework/web/CController.php(292): CFilterChain->run()
+#7 /vagrant/dev1/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#9 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/create')
+#10 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /vagrant/dev1/yii/trackstar/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/create
+HTTP_REFERER=http://localhost:8088/trackstar/index.php?r=issue/index
+---
+2013/11/24 15:52:47 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in /vagrant/dev1/yii/trackstar/protected/controllers/IssueController.php:212
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#1 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 /vagrant/dev1/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /vagrant/dev1/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /vagrant/dev1/yii/framework/web/CController.php(292): CFilterChain->run()
+#7 /vagrant/dev1/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#9 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/create')
+#10 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /vagrant/dev1/yii/trackstar/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/create
+HTTP_REFERER=http://localhost:8088/trackstar/index.php?r=issue/index
+---
+2013/11/24 15:52:51 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in /vagrant/dev1/yii/trackstar/protected/controllers/IssueController.php:212
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#1 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 /vagrant/dev1/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /vagrant/dev1/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /vagrant/dev1/yii/framework/web/CController.php(292): CFilterChain->run()
+#7 /vagrant/dev1/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#9 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/create')
+#10 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /vagrant/dev1/yii/trackstar/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/create
+---
+2013/11/24 16:28:22 [error] [php] Undefined variable: issueDataProvider (/vagrant/dev1/yii/trackstar/protected/views/project/view.php:38)
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CController.php(870): ProjectController->renderFile()
+#1 /vagrant/dev1/yii/framework/web/CController.php(783): ProjectController->renderPartial()
+#2 /vagrant/dev1/yii/trackstar/protected/controllers/ProjectController.php(66): ProjectController->render()
+#3 unknown(0): ProjectController->actionView()
+#4 /vagrant/dev1/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#5 /vagrant/dev1/yii/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 /vagrant/dev1/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(134): ProjectController->runAction()
+#8 /vagrant/dev1/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#9 /vagrant/dev1/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#10 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): ProjectController->filterAccessControl()
+#11 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#12 /vagrant/dev1/yii/framework/web/CController.php(292): CFilterChain->run()
+#13 /vagrant/dev1/yii/framework/web/CController.php(266): ProjectController->runActionWithFilters()
+#14 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): ProjectController->run()
+#15 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#16 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /vagrant/dev1/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php?r=project/view&id=1
+in /vagrant/dev1/yii/trackstar/protected/views/project/view.php (38)
+in /vagrant/dev1/yii/trackstar/protected/controllers/ProjectController.php (66)
+in /vagrant/dev1/yii/trackstar/index.php (13)
+2013/11/24 16:28:28 [error] [php] Undefined variable: issueDataProvider (/vagrant/dev1/yii/trackstar/protected/views/project/view.php:38)
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CController.php(870): ProjectController->renderFile()
+#1 /vagrant/dev1/yii/framework/web/CController.php(783): ProjectController->renderPartial()
+#2 /vagrant/dev1/yii/trackstar/protected/controllers/ProjectController.php(66): ProjectController->render()
+#3 unknown(0): ProjectController->actionView()
+#4 /vagrant/dev1/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#5 /vagrant/dev1/yii/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 /vagrant/dev1/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(134): ProjectController->runAction()
+#8 /vagrant/dev1/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#9 /vagrant/dev1/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#10 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): ProjectController->filterAccessControl()
+#11 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#12 /vagrant/dev1/yii/framework/web/CController.php(292): CFilterChain->run()
+#13 /vagrant/dev1/yii/framework/web/CController.php(266): ProjectController->runActionWithFilters()
+#14 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): ProjectController->run()
+#15 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#16 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /vagrant/dev1/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php?r=project/view&id=1
+in /vagrant/dev1/yii/trackstar/protected/views/project/view.php (38)
+in /vagrant/dev1/yii/trackstar/protected/controllers/ProjectController.php (66)
+in /vagrant/dev1/yii/trackstar/index.php (13)
+2013/11/24 16:29:48 [error] [php] Undefined variable: issueDataProvider (/vagrant/dev1/yii/trackstar/protected/views/project/view.php:38)
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CController.php(870): ProjectController->renderFile()
+#1 /vagrant/dev1/yii/framework/web/CController.php(783): ProjectController->renderPartial()
+#2 /vagrant/dev1/yii/trackstar/protected/controllers/ProjectController.php(66): ProjectController->render()
+#3 unknown(0): ProjectController->actionView()
+#4 /vagrant/dev1/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#5 /vagrant/dev1/yii/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 /vagrant/dev1/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(134): ProjectController->runAction()
+#8 /vagrant/dev1/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#9 /vagrant/dev1/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#10 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): ProjectController->filterAccessControl()
+#11 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#12 /vagrant/dev1/yii/framework/web/CController.php(292): CFilterChain->run()
+#13 /vagrant/dev1/yii/framework/web/CController.php(266): ProjectController->runActionWithFilters()
+#14 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): ProjectController->run()
+#15 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#16 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /vagrant/dev1/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php?r=project/view&id=1
+in /vagrant/dev1/yii/trackstar/protected/views/project/view.php (38)
+in /vagrant/dev1/yii/trackstar/protected/controllers/ProjectController.php (66)
+in /vagrant/dev1/yii/trackstar/index.php (13)
+2013/11/24 16:30:03 [error] [php] Undefined variable: issueDataProvider (/vagrant/dev1/yii/trackstar/protected/views/project/view.php:38)
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CController.php(870): ProjectController->renderFile()
+#1 /vagrant/dev1/yii/framework/web/CController.php(783): ProjectController->renderPartial()
+#2 /vagrant/dev1/yii/trackstar/protected/controllers/ProjectController.php(66): ProjectController->render()
+#3 unknown(0): ProjectController->actionView()
+#4 /vagrant/dev1/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#5 /vagrant/dev1/yii/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 /vagrant/dev1/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(134): ProjectController->runAction()
+#8 /vagrant/dev1/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#9 /vagrant/dev1/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#10 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): ProjectController->filterAccessControl()
+#11 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#12 /vagrant/dev1/yii/framework/web/CController.php(292): CFilterChain->run()
+#13 /vagrant/dev1/yii/framework/web/CController.php(266): ProjectController->runActionWithFilters()
+#14 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): ProjectController->run()
+#15 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#16 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /vagrant/dev1/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php?r=project/view&id=1
+in /vagrant/dev1/yii/trackstar/protected/views/project/view.php (38)
+in /vagrant/dev1/yii/trackstar/protected/controllers/ProjectController.php (66)
+in /vagrant/dev1/yii/trackstar/index.php (13)
+2013/11/24 16:30:31 [error] [php] Undefined variable: issueDataProvider (/vagrant/dev1/yii/trackstar/protected/views/project/view.php:38)
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CController.php(870): ProjectController->renderFile()
+#1 /vagrant/dev1/yii/framework/web/CController.php(783): ProjectController->renderPartial()
+#2 /vagrant/dev1/yii/trackstar/protected/controllers/ProjectController.php(66): ProjectController->render()
+#3 unknown(0): ProjectController->actionView()
+#4 /vagrant/dev1/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#5 /vagrant/dev1/yii/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 /vagrant/dev1/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(134): ProjectController->runAction()
+#8 /vagrant/dev1/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#9 /vagrant/dev1/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#10 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): ProjectController->filterAccessControl()
+#11 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#12 /vagrant/dev1/yii/framework/web/CController.php(292): CFilterChain->run()
+#13 /vagrant/dev1/yii/framework/web/CController.php(266): ProjectController->runActionWithFilters()
+#14 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): ProjectController->run()
+#15 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#16 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /vagrant/dev1/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php?r=project/view&id=1
+in /vagrant/dev1/yii/trackstar/protected/views/project/view.php (38)
+in /vagrant/dev1/yii/trackstar/protected/controllers/ProjectController.php (66)
+in /vagrant/dev1/yii/trackstar/index.php (13)

@@ -1,0 +1,104 @@
+2013/11/12 18:05:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii.".' in /vagrant/dev1/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('gii.')
+#1 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /vagrant/dev1/yii/framework/helloworld/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/framework/helloworld/index.php?r=gii.
+---
+2013/11/12 18:07:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii.".' in /vagrant/dev1/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('gii.')
+#1 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /vagrant/dev1/yii/framework/helloworld/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/framework/helloworld/index.php?r=gii.
+---
+2013/11/12 18:07:30 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /vagrant/dev1/yii/framework/gii/GiiModule.php:169
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('')
+#2 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('gii')
+#3 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /vagrant/dev1/yii/framework/helloworld/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/helloworld/index.php?r=gii
+---
+2013/11/12 18:07:46 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /vagrant/dev1/yii/framework/gii/GiiModule.php:169
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('')
+#2 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('gii')
+#3 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /vagrant/dev1/yii/framework/helloworld/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/helloworld/index.php?r=gii
+---
+2013/11/12 18:08:52 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /vagrant/dev1/yii/framework/gii/GiiModule.php:169
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('')
+#2 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('gii')
+#3 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /vagrant/dev1/yii/framework/helloworld/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/helloworld/index.php?r=gii
+---
+2013/11/12 18:09:43 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /vagrant/dev1/yii/framework/gii/GiiModule.php:169
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('')
+#2 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('gii')
+#3 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /vagrant/dev1/yii/framework/helloworld/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/helloworld/index.php?r=gii
+---
+2013/11/12 18:10:10 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /vagrant/dev1/yii/framework/gii/GiiModule.php:169
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('')
+#2 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('gii')
+#3 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /vagrant/dev1/yii/framework/helloworld/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/helloworld/index.php?r=gii
+---
+2013/11/12 18:10:25 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /vagrant/dev1/yii/framework/gii/GiiModule.php:169
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('')
+#2 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('gii')
+#3 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /vagrant/dev1/yii/framework/helloworld/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/helloworld/index.php?r=gii
+---
+2013/11/22 11:28:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /vagrant/dev1/yii/framework/web/CController.php:484
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CController.php(271): CController->missingAction('')
+#1 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('')
+#2 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('message')
+#3 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /vagrant/dev1/yii/framework/helloworld/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/helloworld/index.php?r=message
+HTTP_REFERER=http://localhost:8088/framework/helloworld/index.php?r=gii/controller
+---
+2013/11/22 11:48:43 [error] [php] include(Chtml.php): failed to open stream: No such file or directory (/vagrant/dev1/yii/framework/YiiBase.php:423)
+Stack trace:
+#0 /vagrant/dev1/yii/framework/helloworld/protected/views/message/goodbye.php(2): spl_autoload_call()
+#1 /vagrant/dev1/yii/framework/web/CBaseController.php(127): require()
+#2 /vagrant/dev1/yii/framework/web/CBaseController.php(96): MessageController->renderInternal()
+#3 /vagrant/dev1/yii/framework/web/CController.php(870): MessageController->renderFile()
+#4 /vagrant/dev1/yii/framework/web/CController.php(783): MessageController->renderPartial()
+#5 /vagrant/dev1/yii/framework/helloworld/protected/controllers/MessageController.php(16): MessageController->render()
+#6 /vagrant/dev1/yii/framework/web/actions/CInlineAction.php(50): MessageController->actionGoodbye()
+#7 /vagrant/dev1/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#8 /vagrant/dev1/yii/framework/web/CController.php(287): MessageController->runAction()
+#9 /vagrant/dev1/yii/framework/web/CController.php(266): MessageController->runActionWithFilters()
+#10 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): MessageController->run()
+#11 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#12 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /vagrant/dev1/yii/framework/helloworld/index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/helloworld/index.php?r=message/goodbye
