@@ -501,3 +501,247 @@ REQUEST_URI=/trackstar/index.php?r=project/view&id=1
 in /vagrant/dev1/yii/trackstar/protected/views/project/view.php (38)
 in /vagrant/dev1/yii/trackstar/protected/controllers/ProjectController.php (66)
 in /vagrant/dev1/yii/trackstar/index.php (13)
+2013/12/01 20:06:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "indx".' in /vagrant/dev1/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('indx')
+#1 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /vagrant/dev1/yii/trackstar/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/trackstar/index.php?r=indx
+---
+2013/12/01 20:12:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "   view".' in /vagrant/dev1/yii/framework/web/CController.php:484
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CController.php(271): CController->missingAction('   view')
+#1 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('   view')
+#2 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/   view')
+#3 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /vagrant/dev1/yii/trackstar/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/%20%20%20view&id=4
+HTTP_REFERER=http://localhost:8088/trackstar/index.php?r=project/view&id=1
+---
+2013/12/01 20:12:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "   view".' in /vagrant/dev1/yii/framework/web/CController.php:484
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CController.php(271): CController->missingAction('   view')
+#1 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('   view')
+#2 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/   view')
+#3 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /vagrant/dev1/yii/trackstar/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/%20%20%20view&id=4
+HTTP_REFERER=http://localhost:8088/trackstar/index.php?r=project/view&id=1
+---
+2013/12/01 20:14:23 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in /vagrant/dev1/yii/trackstar/protected/controllers/IssueController.php:213
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#1 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 /vagrant/dev1/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /vagrant/dev1/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /vagrant/dev1/yii/framework/web/CController.php(292): CFilterChain->run()
+#7 /vagrant/dev1/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#9 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/create')
+#10 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /vagrant/dev1/yii/trackstar/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/create
+HTTP_REFERER=http://localhost:8088/trackstar/index.php?r=issue/view&id=6
+---
+2013/12/01 20:14:32 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in /vagrant/dev1/yii/trackstar/protected/controllers/IssueController.php:213
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#1 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 /vagrant/dev1/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /vagrant/dev1/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /vagrant/dev1/yii/framework/web/CController.php(292): CFilterChain->run()
+#7 /vagrant/dev1/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#9 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/create')
+#10 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /vagrant/dev1/yii/trackstar/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/create
+HTTP_REFERER=http://localhost:8088/trackstar/index.php?r=issue/admin
+---
+2013/12/01 20:14:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in /vagrant/dev1/yii/trackstar/protected/controllers/IssueController.php:213
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#1 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 /vagrant/dev1/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /vagrant/dev1/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /vagrant/dev1/yii/framework/web/CController.php(292): CFilterChain->run()
+#7 /vagrant/dev1/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#9 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/create')
+#10 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /vagrant/dev1/yii/trackstar/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/create
+HTTP_REFERER=http://localhost:8088/trackstar/index.php?r=issue/admin
+---
+2013/12/01 20:19:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "   view".' in /vagrant/dev1/yii/framework/web/CController.php:484
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CController.php(271): CController->missingAction('   view')
+#1 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('   view')
+#2 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/   view')
+#3 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /vagrant/dev1/yii/trackstar/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/%20%20%20view&id=4
+HTTP_REFERER=http://localhost:8088/trackstar/index.php?r=project/view&id=1
+---
+2013/12/01 20:26:40 [error] [php] Use of undefined constant ￼ - assumed '￼' (/vagrant/dev1/yii/trackstar/protected/controllers/IssueController.php:24)
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#1 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /vagrant/dev1/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php?r=issue/index
+in /vagrant/dev1/yii/trackstar/protected/controllers/IssueController.php (24)
+in /vagrant/dev1/yii/trackstar/index.php (13)
+2013/12/01 20:26:42 [error] [php] Use of undefined constant ￼ - assumed '￼' (/vagrant/dev1/yii/trackstar/protected/controllers/IssueController.php:24)
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#1 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /vagrant/dev1/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php?r=issue/view&id=7
+in /vagrant/dev1/yii/trackstar/protected/controllers/IssueController.php (24)
+in /vagrant/dev1/yii/trackstar/index.php (13)
+2013/12/01 20:29:22 [error] [php] Use of undefined constant ￼ - assumed '￼' (/vagrant/dev1/yii/trackstar/protected/controllers/IssueController.php:24)
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#1 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /vagrant/dev1/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php?r=issue/view&id=7
+in /vagrant/dev1/yii/trackstar/protected/controllers/IssueController.php (24)
+in /vagrant/dev1/yii/trackstar/index.php (13)
+2013/12/01 20:29:41 [error] [php] Use of undefined constant ￼ - assumed '￼' (/vagrant/dev1/yii/trackstar/protected/controllers/IssueController.php:24)
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#1 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /vagrant/dev1/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php?r=issue/create&pid=4
+in /vagrant/dev1/yii/trackstar/protected/controllers/IssueController.php (24)
+in /vagrant/dev1/yii/trackstar/index.php (13)
+2013/12/01 20:30:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "prj".' in /vagrant/dev1/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('prj')
+#1 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /vagrant/dev1/yii/trackstar/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/trackstar/index.php?r=prj
+---
+2013/12/01 20:30:59 [error] [php] Use of undefined constant ￼ - assumed '￼' (/vagrant/dev1/yii/trackstar/protected/controllers/IssueController.php:24)
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#1 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /vagrant/dev1/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php?r=issue/create&pid=4
+in /vagrant/dev1/yii/trackstar/protected/controllers/IssueController.php (24)
+in /vagrant/dev1/yii/trackstar/index.php (13)
+2013/12/01 20:31:31 [error] [php] Use of undefined constant ￼ - assumed '￼' (/vagrant/dev1/yii/trackstar/protected/controllers/IssueController.php:24)
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#1 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /vagrant/dev1/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php?r=issue/create&pid=4
+in /vagrant/dev1/yii/trackstar/protected/controllers/IssueController.php (24)
+in /vagrant/dev1/yii/trackstar/index.php (13)
+2013/12/01 20:32:01 [error] [php] Trying to get property of non-object (/vagrant/dev1/yii/trackstar/protected/controllers/IssueController.php:70)
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(134): IssueController->runAction()
+#1 /vagrant/dev1/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#2 /vagrant/dev1/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#3 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): IssueController->filterAccessControl()
+#4 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#5 /vagrant/dev1/yii/framework/web/CController.php(292): CFilterChain->run()
+#6 /vagrant/dev1/yii/framework/web/CController.php(266): IssueController->runActionWithFilters()
+#7 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): IssueController->run()
+#8 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /vagrant/dev1/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php?r=issue/create&pid=4
+in /vagrant/dev1/yii/trackstar/protected/controllers/IssueController.php (70)
+in /vagrant/dev1/yii/trackstar/index.php (13)
+2013/12/01 20:33:56 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in /vagrant/dev1/yii/trackstar/protected/controllers/IssueController.php:219
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#1 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 /vagrant/dev1/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /vagrant/dev1/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /vagrant/dev1/yii/framework/web/CController.php(292): CFilterChain->run()
+#7 /vagrant/dev1/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('')
+#9 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/')
+#10 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /vagrant/dev1/yii/trackstar/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/
+---
+2013/12/01 20:34:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "   view".' in /vagrant/dev1/yii/framework/web/CController.php:484
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CController.php(271): CController->missingAction('   view')
+#1 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('   view')
+#2 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/   view')
+#3 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /vagrant/dev1/yii/trackstar/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/%20%20%20view&id=6
+HTTP_REFERER=http://localhost:8088/trackstar/index.php?r=project/view&id=3
+---
+2013/12/01 20:34:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "   view".' in /vagrant/dev1/yii/framework/web/CController.php:484
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CController.php(271): CController->missingAction('   view')
+#1 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('   view')
+#2 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/   view')
+#3 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /vagrant/dev1/yii/trackstar/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/%20%20%20view&id=3
+HTTP_REFERER=http://localhost:8088/trackstar/index.php?r=project/view&id=2
+---
+2013/12/01 20:34:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "   view".' in /vagrant/dev1/yii/framework/web/CController.php:484
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CController.php(271): CController->missingAction('   view')
+#1 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('   view')
+#2 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/   view')
+#3 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /vagrant/dev1/yii/trackstar/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/%20%20%20view&id=8
+HTTP_REFERER=http://localhost:8088/trackstar/index.php?r=issue/index&pid=4
+---
+2013/12/01 20:37:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "   view".' in /vagrant/dev1/yii/framework/web/CController.php:484
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CController.php(271): CController->missingAction('   view')
+#1 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('   view')
+#2 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/   view')
+#3 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /vagrant/dev1/yii/trackstar/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/%20%20%20view&id=8
+---
+2013/12/01 20:37:31 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in /vagrant/dev1/yii/trackstar/protected/controllers/IssueController.php:219
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#1 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 /vagrant/dev1/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /vagrant/dev1/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /vagrant/dev1/yii/framework/web/CController.php(292): CFilterChain->run()
+#7 /vagrant/dev1/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('')
+#9 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('issue')
+#10 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /vagrant/dev1/yii/trackstar/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue
+---
