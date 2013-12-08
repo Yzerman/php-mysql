@@ -1,0 +1,501 @@
+2013/11/26 18:59:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "default".' in /vagrant/dev1/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('default')
+#1 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /vagrant/dev1/yii/Restlike/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Restlike/index.php?r=default
+---
+2013/11/26 18:59:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "default".' in /vagrant/dev1/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('default')
+#1 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /vagrant/dev1/yii/Restlike/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Restlike/index.php?r=default
+---
+2013/11/26 19:00:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "default/inde".' in /vagrant/dev1/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('default/inde')
+#1 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /vagrant/dev1/yii/Restlike/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Restlike/index.php?r=default/inde
+---
+2013/11/26 19:00:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "default/index".' in /vagrant/dev1/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('default/index')
+#1 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /vagrant/dev1/yii/Restlike/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Restlike/index.php?r=default/index
+---
+2013/11/26 19:01:15 [error] [exception.CException] exception 'CException' with message 'The attribute must be specified in the format of "Name:Type:Label", where "Type" and "Label" are optional.' in /vagrant/dev1/yii/framework/zii/widgets/CDetailView.php:181
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CBaseController.php(174): CDetailView->run()
+#1 /vagrant/dev1/yii/Restlike/protected/views/episoden/view.php(35): CBaseController->widget('zii.widgets.CDe...', Array)
+#2 /vagrant/dev1/yii/framework/web/CBaseController.php(127): require('/vagrant/dev1/y...')
+#3 /vagrant/dev1/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/vagrant/dev1/y...', Array, true)
+#4 /vagrant/dev1/yii/framework/web/CController.php(870): CBaseController->renderFile('/vagrant/dev1/y...', Array, true)
+#5 /vagrant/dev1/yii/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#6 /vagrant/dev1/yii/Restlike/protected/controllers/EpisodenController.php(56): CController->render('view', Array)
+#7 [internal function]: EpisodenController->actionView('12112')
+#8 /vagrant/dev1/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(EpisodenController), Array)
+#9 /vagrant/dev1/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(EpisodenController), Object(ReflectionMethod), Array)
+#10 /vagrant/dev1/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /vagrant/dev1/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /vagrant/dev1/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /vagrant/dev1/yii/framework/web/CController.php(292): CFilterChain->run()
+#17 /vagrant/dev1/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#19 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('episoden/view')
+#20 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /vagrant/dev1/yii/Restlike/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/Restlike/index.php?r=episoden/view&id=12112
+HTTP_REFERER=http://localhost:8088/Restlike/index.php?r=episoden/create
+---
+2013/11/26 19:01:58 [error] [exception.CException] exception 'CException' with message 'The attribute must be specified in the format of "Name:Type:Label", where "Type" and "Label" are optional.' in /vagrant/dev1/yii/framework/zii/widgets/CDetailView.php:181
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CBaseController.php(174): CDetailView->run()
+#1 /vagrant/dev1/yii/Restlike/protected/views/episoden/view.php(35): CBaseController->widget('zii.widgets.CDe...', Array)
+#2 /vagrant/dev1/yii/framework/web/CBaseController.php(127): require('/vagrant/dev1/y...')
+#3 /vagrant/dev1/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/vagrant/dev1/y...', Array, true)
+#4 /vagrant/dev1/yii/framework/web/CController.php(870): CBaseController->renderFile('/vagrant/dev1/y...', Array, true)
+#5 /vagrant/dev1/yii/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#6 /vagrant/dev1/yii/Restlike/protected/controllers/EpisodenController.php(56): CController->render('view', Array)
+#7 [internal function]: EpisodenController->actionView('112')
+#8 /vagrant/dev1/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(EpisodenController), Array)
+#9 /vagrant/dev1/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(EpisodenController), Object(ReflectionMethod), Array)
+#10 /vagrant/dev1/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /vagrant/dev1/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /vagrant/dev1/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /vagrant/dev1/yii/framework/web/CController.php(292): CFilterChain->run()
+#17 /vagrant/dev1/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#19 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('episoden/view')
+#20 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /vagrant/dev1/yii/Restlike/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/Restlike/index.php?r=episoden/view&id=112
+HTTP_REFERER=http://localhost:8088/Restlike/index.php?r=episoden/create
+---
+2013/11/26 19:02:22 [error] [exception.CException] exception 'CException' with message 'The attribute must be specified in the format of "Name:Type:Label", where "Type" and "Label" are optional.' in /vagrant/dev1/yii/framework/zii/widgets/CDetailView.php:181
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CBaseController.php(174): CDetailView->run()
+#1 /vagrant/dev1/yii/Restlike/protected/views/episoden/view.php(35): CBaseController->widget('zii.widgets.CDe...', Array)
+#2 /vagrant/dev1/yii/framework/web/CBaseController.php(127): require('/vagrant/dev1/y...')
+#3 /vagrant/dev1/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/vagrant/dev1/y...', Array, true)
+#4 /vagrant/dev1/yii/framework/web/CController.php(870): CBaseController->renderFile('/vagrant/dev1/y...', Array, true)
+#5 /vagrant/dev1/yii/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#6 /vagrant/dev1/yii/Restlike/protected/controllers/EpisodenController.php(56): CController->render('view', Array)
+#7 [internal function]: EpisodenController->actionView('112')
+#8 /vagrant/dev1/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(EpisodenController), Array)
+#9 /vagrant/dev1/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(EpisodenController), Object(ReflectionMethod), Array)
+#10 /vagrant/dev1/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /vagrant/dev1/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /vagrant/dev1/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /vagrant/dev1/yii/framework/web/CController.php(292): CFilterChain->run()
+#17 /vagrant/dev1/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#19 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('episoden/view')
+#20 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /vagrant/dev1/yii/Restlike/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/Restlike/index.php?r=episoden/view&id=112
+HTTP_REFERER=http://localhost:8088/Restlike/index.php?r=episoden/create
+---
+2013/11/26 19:03:00 [error] [exception.CException] exception 'CException' with message 'The attribute must be specified in the format of "Name:Type:Label", where "Type" and "Label" are optional.' in /vagrant/dev1/yii/framework/zii/widgets/CDetailView.php:181
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CBaseController.php(174): CDetailView->run()
+#1 /vagrant/dev1/yii/Restlike/protected/views/episoden/view.php(35): CBaseController->widget('zii.widgets.CDe...', Array)
+#2 /vagrant/dev1/yii/framework/web/CBaseController.php(127): require('/vagrant/dev1/y...')
+#3 /vagrant/dev1/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/vagrant/dev1/y...', Array, true)
+#4 /vagrant/dev1/yii/framework/web/CController.php(870): CBaseController->renderFile('/vagrant/dev1/y...', Array, true)
+#5 /vagrant/dev1/yii/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#6 /vagrant/dev1/yii/Restlike/protected/controllers/EpisodenController.php(56): CController->render('view', Array)
+#7 [internal function]: EpisodenController->actionView('8')
+#8 /vagrant/dev1/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(EpisodenController), Array)
+#9 /vagrant/dev1/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(EpisodenController), Object(ReflectionMethod), Array)
+#10 /vagrant/dev1/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /vagrant/dev1/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /vagrant/dev1/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /vagrant/dev1/yii/framework/web/CController.php(292): CFilterChain->run()
+#17 /vagrant/dev1/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#19 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('episoden/view')
+#20 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /vagrant/dev1/yii/Restlike/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/Restlike/index.php?r=episoden/view&id=8
+HTTP_REFERER=http://localhost:8088/Restlike/index.php?r=episoden/index
+---
+2013/11/26 19:03:08 [error] [exception.CException] exception 'CException' with message 'The attribute must be specified in the format of "Name:Type:Label", where "Type" and "Label" are optional.' in /vagrant/dev1/yii/framework/zii/widgets/CDetailView.php:181
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CBaseController.php(174): CDetailView->run()
+#1 /vagrant/dev1/yii/Restlike/protected/views/episoden/view.php(35): CBaseController->widget('zii.widgets.CDe...', Array)
+#2 /vagrant/dev1/yii/framework/web/CBaseController.php(127): require('/vagrant/dev1/y...')
+#3 /vagrant/dev1/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/vagrant/dev1/y...', Array, true)
+#4 /vagrant/dev1/yii/framework/web/CController.php(870): CBaseController->renderFile('/vagrant/dev1/y...', Array, true)
+#5 /vagrant/dev1/yii/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#6 /vagrant/dev1/yii/Restlike/protected/controllers/EpisodenController.php(56): CController->render('view', Array)
+#7 [internal function]: EpisodenController->actionView('8')
+#8 /vagrant/dev1/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(EpisodenController), Array)
+#9 /vagrant/dev1/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(EpisodenController), Object(ReflectionMethod), Array)
+#10 /vagrant/dev1/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /vagrant/dev1/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /vagrant/dev1/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /vagrant/dev1/yii/framework/web/CController.php(292): CFilterChain->run()
+#17 /vagrant/dev1/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#19 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('episoden/view')
+#20 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /vagrant/dev1/yii/Restlike/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/Restlike/index.php?r=episoden/view&id=8
+HTTP_REFERER=http://localhost:8088/Restlike/index.php?r=episoden/index
+---
+2013/11/26 19:03:59 [error] [exception.CException] exception 'CException' with message 'The attribute must be specified in the format of "Name:Type:Label", where "Type" and "Label" are optional.' in /vagrant/dev1/yii/framework/zii/widgets/CDetailView.php:181
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CBaseController.php(174): CDetailView->run()
+#1 /vagrant/dev1/yii/Restlike/protected/views/episoden/view.php(35): CBaseController->widget('zii.widgets.CDe...', Array)
+#2 /vagrant/dev1/yii/framework/web/CBaseController.php(127): require('/vagrant/dev1/y...')
+#3 /vagrant/dev1/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/vagrant/dev1/y...', Array, true)
+#4 /vagrant/dev1/yii/framework/web/CController.php(870): CBaseController->renderFile('/vagrant/dev1/y...', Array, true)
+#5 /vagrant/dev1/yii/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#6 /vagrant/dev1/yii/Restlike/protected/controllers/EpisodenController.php(56): CController->render('view', Array)
+#7 [internal function]: EpisodenController->actionView('8')
+#8 /vagrant/dev1/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(EpisodenController), Array)
+#9 /vagrant/dev1/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(EpisodenController), Object(ReflectionMethod), Array)
+#10 /vagrant/dev1/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /vagrant/dev1/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /vagrant/dev1/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /vagrant/dev1/yii/framework/web/CController.php(292): CFilterChain->run()
+#17 /vagrant/dev1/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#19 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('episoden/view')
+#20 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /vagrant/dev1/yii/Restlike/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/Restlike/index.php?r=episoden/view&id=8
+HTTP_REFERER=http://localhost:8088/Restlike/index.php?r=episoden/index
+---
+2013/11/26 19:04:07 [error] [exception.CException] exception 'CException' with message 'The attribute must be specified in the format of "Name:Type:Label", where "Type" and "Label" are optional.' in /vagrant/dev1/yii/framework/zii/widgets/CDetailView.php:181
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CBaseController.php(174): CDetailView->run()
+#1 /vagrant/dev1/yii/Restlike/protected/views/episoden/view.php(35): CBaseController->widget('zii.widgets.CDe...', Array)
+#2 /vagrant/dev1/yii/framework/web/CBaseController.php(127): require('/vagrant/dev1/y...')
+#3 /vagrant/dev1/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/vagrant/dev1/y...', Array, true)
+#4 /vagrant/dev1/yii/framework/web/CController.php(870): CBaseController->renderFile('/vagrant/dev1/y...', Array, true)
+#5 /vagrant/dev1/yii/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#6 /vagrant/dev1/yii/Restlike/protected/controllers/EpisodenController.php(56): CController->render('view', Array)
+#7 [internal function]: EpisodenController->actionView('8')
+#8 /vagrant/dev1/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(EpisodenController), Array)
+#9 /vagrant/dev1/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(EpisodenController), Object(ReflectionMethod), Array)
+#10 /vagrant/dev1/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /vagrant/dev1/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /vagrant/dev1/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /vagrant/dev1/yii/framework/web/CController.php(292): CFilterChain->run()
+#17 /vagrant/dev1/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#19 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('episoden/view')
+#20 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /vagrant/dev1/yii/Restlike/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/Restlike/index.php?r=episoden/view&id=8
+HTTP_REFERER=http://localhost:8088/Restlike/index.php?r=episoden/index
+---
+2013/11/26 19:06:41 [error] [exception.CException] exception 'CException' with message 'The attribute must be specified in the format of "Name:Type:Label", where "Type" and "Label" are optional.' in /vagrant/dev1/yii/framework/zii/widgets/CDetailView.php:181
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CBaseController.php(174): CDetailView->run()
+#1 /vagrant/dev1/yii/Restlike/protected/views/episoden/view.php(35): CBaseController->widget('zii.widgets.CDe...', Array)
+#2 /vagrant/dev1/yii/framework/web/CBaseController.php(127): require('/vagrant/dev1/y...')
+#3 /vagrant/dev1/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/vagrant/dev1/y...', Array, true)
+#4 /vagrant/dev1/yii/framework/web/CController.php(870): CBaseController->renderFile('/vagrant/dev1/y...', Array, true)
+#5 /vagrant/dev1/yii/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#6 /vagrant/dev1/yii/Restlike/protected/controllers/EpisodenController.php(56): CController->render('view', Array)
+#7 [internal function]: EpisodenController->actionView('8')
+#8 /vagrant/dev1/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(EpisodenController), Array)
+#9 /vagrant/dev1/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(EpisodenController), Object(ReflectionMethod), Array)
+#10 /vagrant/dev1/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /vagrant/dev1/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /vagrant/dev1/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /vagrant/dev1/yii/framework/web/CController.php(292): CFilterChain->run()
+#17 /vagrant/dev1/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#19 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('episoden/view')
+#20 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /vagrant/dev1/yii/Restlike/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/Restlike/index.php?r=episoden/view&id=8
+HTTP_REFERER=http://localhost:8088/Restlike/index.php?r=episoden/index
+---
+2013/11/26 19:07:01 [error] [exception.CException] exception 'CException' with message 'The attribute must be specified in the format of "Name:Type:Label", where "Type" and "Label" are optional.' in /vagrant/dev1/yii/framework/zii/widgets/CDetailView.php:181
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CBaseController.php(174): CDetailView->run()
+#1 /vagrant/dev1/yii/Restlike/protected/views/episoden/view.php(35): CBaseController->widget('zii.widgets.CDe...', Array)
+#2 /vagrant/dev1/yii/framework/web/CBaseController.php(127): require('/vagrant/dev1/y...')
+#3 /vagrant/dev1/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/vagrant/dev1/y...', Array, true)
+#4 /vagrant/dev1/yii/framework/web/CController.php(870): CBaseController->renderFile('/vagrant/dev1/y...', Array, true)
+#5 /vagrant/dev1/yii/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#6 /vagrant/dev1/yii/Restlike/protected/controllers/EpisodenController.php(56): CController->render('view', Array)
+#7 [internal function]: EpisodenController->actionView('8')
+#8 /vagrant/dev1/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(EpisodenController), Array)
+#9 /vagrant/dev1/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(EpisodenController), Object(ReflectionMethod), Array)
+#10 /vagrant/dev1/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /vagrant/dev1/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /vagrant/dev1/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /vagrant/dev1/yii/framework/web/CController.php(292): CFilterChain->run()
+#17 /vagrant/dev1/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#19 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('episoden/view')
+#20 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /vagrant/dev1/yii/Restlike/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/Restlike/index.php?r=episoden/view&id=8
+HTTP_REFERER=http://localhost:8088/Restlike/index.php?r=episoden/index
+---
+2013/11/26 19:10:19 [error] [exception.CException] exception 'CException' with message 'The attribute must be specified in the format of "Name:Type:Label", where "Type" and "Label" are optional.' in /vagrant/dev1/yii/framework/zii/widgets/CDetailView.php:181
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CBaseController.php(174): CDetailView->run()
+#1 /vagrant/dev1/yii/Restlike/protected/views/episoden/view.php(36): CBaseController->widget('zii.widgets.CDe...', Array)
+#2 /vagrant/dev1/yii/framework/web/CBaseController.php(127): require('/vagrant/dev1/y...')
+#3 /vagrant/dev1/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/vagrant/dev1/y...', Array, true)
+#4 /vagrant/dev1/yii/framework/web/CController.php(870): CBaseController->renderFile('/vagrant/dev1/y...', Array, true)
+#5 /vagrant/dev1/yii/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#6 /vagrant/dev1/yii/Restlike/protected/controllers/EpisodenController.php(56): CController->render('view', Array)
+#7 [internal function]: EpisodenController->actionView('8')
+#8 /vagrant/dev1/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(EpisodenController), Array)
+#9 /vagrant/dev1/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(EpisodenController), Object(ReflectionMethod), Array)
+#10 /vagrant/dev1/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /vagrant/dev1/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /vagrant/dev1/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /vagrant/dev1/yii/framework/web/CController.php(292): CFilterChain->run()
+#17 /vagrant/dev1/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#19 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('episoden/view')
+#20 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /vagrant/dev1/yii/Restlike/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/Restlike/index.php?r=episoden/view&id=8
+---
+2013/11/26 19:12:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /vagrant/dev1/yii/framework/web/auth/CAccessControlFilter.php:170
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/auth/CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /vagrant/dev1/yii/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /vagrant/dev1/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /vagrant/dev1/yii/framework/web/CController.php(292): CFilterChain->run()
+#6 /vagrant/dev1/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('delete')
+#8 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('episoden/delete')
+#9 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /vagrant/dev1/yii/Restlike/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Restlike/index.php?r=episoden/delete&id=18
+HTTP_REFERER=http://localhost:8088/Restlike/index.php?r=episoden/view&id=18
+---
+2013/11/26 19:12:58 [error] [exception.CException] exception 'CException' with message 'The column must be specified in the format of "Name:Type:Label", where "Type" and "Label" are optional.' in /vagrant/dev1/yii/framework/zii/widgets/grid/CGridView.php:360
+Stack trace:
+#0 /vagrant/dev1/yii/framework/zii/widgets/grid/CGridView.php(331): CGridView->createDataColumn('ORIGINAL??TITEL')
+#1 /vagrant/dev1/yii/framework/zii/widgets/grid/CGridView.php(307): CGridView->initColumns()
+#2 /vagrant/dev1/yii/framework/web/CBaseController.php(148): CGridView->init()
+#3 /vagrant/dev1/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#4 /vagrant/dev1/yii/Restlike/protected/views/episoden/admin.php(64): CBaseController->widget('zii.widgets.gri...', Array)
+#5 /vagrant/dev1/yii/framework/web/CBaseController.php(127): require('/vagrant/dev1/y...')
+#6 /vagrant/dev1/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/vagrant/dev1/y...', Array, true)
+#7 /vagrant/dev1/yii/framework/web/CController.php(870): CBaseController->renderFile('/vagrant/dev1/y...', Array, true)
+#8 /vagrant/dev1/yii/framework/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#9 /vagrant/dev1/yii/Restlike/protected/controllers/EpisodenController.php(143): CController->render('admin', Array)
+#10 /vagrant/dev1/yii/framework/web/actions/CInlineAction.php(50): EpisodenController->actionAdmin()
+#11 /vagrant/dev1/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#12 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#13 /vagrant/dev1/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#14 /vagrant/dev1/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#15 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#16 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#17 /vagrant/dev1/yii/framework/web/CController.php(292): CFilterChain->run()
+#18 /vagrant/dev1/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('admin')
+#20 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('episoden/admin')
+#21 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#22 /vagrant/dev1/yii/Restlike/index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/Restlike/index.php?r=episoden/admin
+HTTP_REFERER=http://localhost:8088/Restlike/index.php?r=episoden/view&id=8
+---
+2013/11/26 19:13:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /vagrant/dev1/yii/Restlike/protected/controllers/EpisodenController.php:155
+Stack trace:
+#0 /vagrant/dev1/yii/Restlike/protected/controllers/EpisodenController.php(55): EpisodenController->loadModel('8')
+#1 [internal function]: EpisodenController->actionView('8')
+#2 /vagrant/dev1/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(EpisodenController), Array)
+#3 /vagrant/dev1/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(EpisodenController), Object(ReflectionMethod), Array)
+#4 /vagrant/dev1/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /vagrant/dev1/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /vagrant/dev1/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /vagrant/dev1/yii/framework/web/CController.php(292): CFilterChain->run()
+#11 /vagrant/dev1/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#13 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('episoden/view')
+#14 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /vagrant/dev1/yii/Restlike/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Restlike/index.php?r=episoden/view&id=8
+HTTP_REFERER=http://localhost:8088/Restlike/index.php?r=episoden/index
+---
+2013/11/26 19:13:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /vagrant/dev1/yii/Restlike/protected/controllers/EpisodenController.php:155
+Stack trace:
+#0 /vagrant/dev1/yii/Restlike/protected/controllers/EpisodenController.php(55): EpisodenController->loadModel('8')
+#1 [internal function]: EpisodenController->actionView('8')
+#2 /vagrant/dev1/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(EpisodenController), Array)
+#3 /vagrant/dev1/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(EpisodenController), Object(ReflectionMethod), Array)
+#4 /vagrant/dev1/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /vagrant/dev1/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /vagrant/dev1/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /vagrant/dev1/yii/framework/web/CController.php(292): CFilterChain->run()
+#11 /vagrant/dev1/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#13 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('episoden/view')
+#14 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /vagrant/dev1/yii/Restlike/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Restlike/index.php?r=episoden/view&id=8
+---
+2013/11/26 19:13:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /vagrant/dev1/yii/Restlike/protected/controllers/EpisodenController.php:155
+Stack trace:
+#0 /vagrant/dev1/yii/Restlike/protected/controllers/EpisodenController.php(55): EpisodenController->loadModel('4')
+#1 [internal function]: EpisodenController->actionView('4')
+#2 /vagrant/dev1/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(EpisodenController), Array)
+#3 /vagrant/dev1/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(EpisodenController), Object(ReflectionMethod), Array)
+#4 /vagrant/dev1/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /vagrant/dev1/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /vagrant/dev1/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /vagrant/dev1/yii/framework/web/CController.php(292): CFilterChain->run()
+#11 /vagrant/dev1/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#13 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('episoden/view')
+#14 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /vagrant/dev1/yii/Restlike/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Restlike/index.php?r=episoden/view&id=4
+---
+2013/11/26 19:14:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /vagrant/dev1/yii/Restlike/protected/controllers/EpisodenController.php:155
+Stack trace:
+#0 /vagrant/dev1/yii/Restlike/protected/controllers/EpisodenController.php(55): EpisodenController->loadModel('4')
+#1 [internal function]: EpisodenController->actionView('4')
+#2 /vagrant/dev1/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(EpisodenController), Array)
+#3 /vagrant/dev1/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(EpisodenController), Object(ReflectionMethod), Array)
+#4 /vagrant/dev1/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /vagrant/dev1/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /vagrant/dev1/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /vagrant/dev1/yii/framework/web/CController.php(292): CFilterChain->run()
+#11 /vagrant/dev1/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#13 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('episoden/view')
+#14 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /vagrant/dev1/yii/Restlike/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Restlike/index.php?r=episoden/view&id=4
+---
+2013/11/26 19:15:06 [error] [exception.CException] exception 'CException' with message 'The attribute must be specified in the format of "Name:Type:Label", where "Type" and "Label" are optional.' in /vagrant/dev1/yii/framework/zii/widgets/CDetailView.php:181
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CBaseController.php(174): CDetailView->run()
+#1 /vagrant/dev1/yii/Restlike/protected/views/episoden/view.php(37): CBaseController->widget('zii.widgets.CDe...', Array)
+#2 /vagrant/dev1/yii/framework/web/CBaseController.php(127): require('/vagrant/dev1/y...')
+#3 /vagrant/dev1/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/vagrant/dev1/y...', Array, true)
+#4 /vagrant/dev1/yii/framework/web/CController.php(870): CBaseController->renderFile('/vagrant/dev1/y...', Array, true)
+#5 /vagrant/dev1/yii/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#6 /vagrant/dev1/yii/Restlike/protected/controllers/EpisodenController.php(56): CController->render('view', Array)
+#7 [internal function]: EpisodenController->actionView('9')
+#8 /vagrant/dev1/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(EpisodenController), Array)
+#9 /vagrant/dev1/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(EpisodenController), Object(ReflectionMethod), Array)
+#10 /vagrant/dev1/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /vagrant/dev1/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /vagrant/dev1/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /vagrant/dev1/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /vagrant/dev1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /vagrant/dev1/yii/framework/web/CController.php(292): CFilterChain->run()
+#17 /vagrant/dev1/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /vagrant/dev1/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#19 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('episoden/view')
+#20 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /vagrant/dev1/yii/Restlike/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/Restlike/index.php?r=episoden/view&id=9
+---
+2013/11/26 20:08:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "post/list".' in /vagrant/dev1/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post/list')
+#1 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /vagrant/dev1/yii/Restlike/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Restlike/index.php/post/list
+---
+2013/11/26 20:08:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "post".' in /vagrant/dev1/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post')
+#1 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /vagrant/dev1/yii/Restlike/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Restlike/index.php/post/
+---
+2013/11/26 20:08:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "post/list".' in /vagrant/dev1/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post/list')
+#1 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /vagrant/dev1/yii/Restlike/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Restlike/index.php/post/list
+---
+2013/11/26 20:08:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "post/list".' in /vagrant/dev1/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /vagrant/dev1/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post/list')
+#1 /vagrant/dev1/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /vagrant/dev1/yii/Restlike/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Restlike/index.php/posts
+---
